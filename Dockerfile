@@ -23,7 +23,7 @@ ENV LANG=C.UTF-8
 EXPOSE 80
 
 # Start the app
-CMD ["gunicorn", "-b", "0.0.0.0:80","app:app","--workers","4","-k","uvicorn.workers.UvicornH11Worker","--timeout","900"]
+CMD ["gunicorn", "-b", "0.0.0.0:80","app:app","--workers","1","-k","uvicorn.workers.UvicornH11Worker","--timeout","900"]
 
 
 
